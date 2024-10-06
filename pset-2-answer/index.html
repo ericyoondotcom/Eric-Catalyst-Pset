@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>CSS/JS Obstacle Course</title>
+        <script src="index.js"></script>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+
+    <body>
+        <h1>CSS/JS Obstacle Course</h1>
+        <p>Reminder: you are NOT allowed to modify this file! You may only modify <b>index.css</b> and <b>index.js</b>.</p>
+        
+        
+        <h2>Level 1</h2>
+        <p id="l1">Change the color of this text to red.</p>
+
+        <h2>Level 2</h2>
+        <p id="l2">Change the background of this box to yellow.</p>
+
+        <h2>Level 3</h2>
+        <p><b>Change all the stooges to blue.</b></p>
+        <p class="stooge">One stooge</p>
+        <p class="stooge">Two stooges</p>
+        <p class="stooge">Three stooges</p>
+        <p class="stooge">Four stooges</p>
+        <p class="stooge">Five stooges</p>
+        <p class="stooge">Six stooges</p>
+        <p class="stooge">Seven stooges</p>
+
+        <h2>Level 4</h2>
+        <p class="l4" id="l4_green">Change this text to green...</p>
+        <p class="l4">but this text should be red</p>
+        <p class="l4">and this text should also be red</p>
+        <p>Hint: What does the "C" in CSS stand for?</p>
+
+        <h2>Level 5</h2>
+        <div>
+            <p class="l5">Change the font of this text to be a serif font</p>
+            <p class="l5">but this text should be sans-serif</p>
+            <p class="l5">and this text should be sans-serif</p>
+            <p class="l5">and this text should be sans-serif</p>
+            <p class="l5">but this text should be monospace</p>
+        </div>
+        <p>Hint: google how to select first and last child elements in CSS</p>
+
+        <h2>Level 6</h2>
+        <p>Make this image have a width of 200px, and put a thick, yellow border around it.</p>
+        <img id="l6" src="https://storage.googleapis.com/scav-public/beinecke.jpg" alt="beinecke">
+        
+        <h2>Level 7</h2>
+        <p>Put the emojis on the same line.
+        <p class="l7">🥺</p>
+        <p class="l7">👉</p>
+        <p class="l7">👈</p>
+        
+        <h2>Level 8</h2>
+        <p>These emoji people are exes. Separate them with a vertical 20px gap.</p>
+        <p id="l8_top">🧍‍♀️</p>
+        <p id="l8_bottom">🧍‍♂️</p>
+
+        <h2>Level 9</h2>
+        <p>Make the button Yale-themed! Make it have a blue background, white text, and ample padding. However, the blackground should change to red when the button is being hovered. Additionally, it should be pill-shaped, instead of the default rectangular.</p>
+        <a href="https://ivyhub-simulators.andressevilla.com/yale/login.html">
+            <button id="yale_button">POV: you're a harvard student</button>
+        </a>
+
+        <h1>Javascript time!</h1>
+        <h2>Level 10</h2>
+        <p id="l10">Click the button to change the text of this paragraph to "Hello, world!"</p>
+        <button onclick="level_10()">Click me!</button>
+
+        <h2>Level 11</h2>
+        <p id="l11">Click the button once to change the background of this paragraph to yellow. Click it again to change it back to normal.</p>
+        <button onclick="level_11()">Click me!</button>
+        <p>Hint: to reset the background color, set it to "inherit".</p>
+
+        <h2>Level 12</h2>
+        <p>Flexbox is a new API available in modern browsers. Use Flexbox to make an evenly-spaced row of emoji. that spans the entire box.</p>
+        
+        <div id="l12_container" style="width: 50vw; border: 1px red solid;">
+            <p>🥺</p>
+            <p>👉</p>
+            <p>👈</p>
+        </div>
+
+        <h2>Level 13</h2>
+        <p>When you enter a number in the text box, then click the button, a triangle of stars should appear. The triangle should have dimensions of the number you entered.</p>
+        <p>For example, if I type 5, the triangle should look like this:</p>
+        <pre>
+            *<br>
+            **<br>
+            ***<br>
+            ****<br>
+            *****<br>
+        </pre>
+        <input type="text" id="l13_input" placeholder="Enter a number">
+        <button onclick="level_13()">Click me!</button>
+        <p id="l13_output">The stars should appear here</p>
+    </body>
+</html>
